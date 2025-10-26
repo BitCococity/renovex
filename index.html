@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Renovex: reparaciones, instalaciones y mantenimiento inmediato. Pide tu presupuesto online y te conectamos con profesionales verificados por zona." />
+  <title>Renovex | Reparaciones y mantenimiento inmediato</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="rx">Rx</span>
+        <span class="brand">Renovex</span>
+      </div>
+      <nav class="menu">
+        <a href="#presupuesto">Presupuesto</a>
+        <a href="#servicios">Servicios</a>
+        <a href="profesionales.html">Profesionales</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Tu avería, resuelta.</h1>
+      <p class="hero-text">
+        Reparaciones, instalaciones y mantenimiento con técnicos verificados por Renovex.
+        Pide tu presupuesto online en minutos. Servicio rápido, claro y con garantía.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn-primary" href="#presupuesto">Pedir presupuesto</a>
+        <a class="btn-secondary" href="#servicios">Ver servicios</a>
+      </div>
+
+      <div class="hero-badges">
+        <span>Profesionales verificados ✅</span>
+        <span>Atención 24 h</span>
+        <span>Sin compromiso</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESUPUESTO ONLINE -->
+  <section class="section" id="presupuesto">
+    <div class="section-inner">
+      <h2>Presupuesto online</h2>
+      <p class="section-desc">
+        Cuéntanos qué necesitas. Te respondemos por email con una estimación y el técnico más cercano.
+      </p>
+
+      <form class="card form-card" id="presupuestoForm">
+        <div class="form-grid">
+          <div class="form-field">
+            <label>Nombre y apellidos</label>
+            <input type="text" name="nombre" required placeholder="Ej. Laura Gómez" />
+          </div>
+
+          <div class="form-field">
+            <label>Localidad / zona</label>
+            <input type="text" name="zona" required placeholder="Ej. Girona centro / Platja d'Aro" />
+          </div>
+
+          <div class="form-field">
+            <label>Correo electrónico</label>
+            <input type="email" name="email" required placeholder="tuemail@example.com" />
+          </div>
+
+          <div class="form-field">
+            <label>Tipo de servicio</label>
+            <select name="servicio" required>
+              <option value="">Selecciona...</option>
+              <option>Fontanería</option>
+              <option>Electricidad</option>
+              <option>Climatización / Aire</option>
+              <option>Electrodomésticos</option>
+              <option>Pintura / Carpintería</option>
+              <option>Reforma baño / cocina</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="form-field form-full">
+            <label>Describe el problema</label>
+            <textarea name="descripcion" rows="4" required placeholder="Ej. Pérdida de agua bajo el fregadero, ya he cerrado la llave general."></textarea>
+          </div>
+
+          <div class="form-field form-full">
+            <label>Fotos (opcional, enlace)</label>
+            <input type="text" name="foto" placeholder="Enlace a foto / video (Drive, WhatsApp Web...)" />
+          </div>
+        </div>
+
+        <p class="legal-text">
+          Al enviar aceptas ser contactado por Renovex al correo facilitado para ofrecerte un presupuesto orientativo y proponer un profesional verificado en tu zona.
+        </p>
+
+        <button class="btn-primary fullwidth" type="submit">Enviar solicitud</button>
+
+        <p id="resultado" class="resultado-ok hidden">
+          ¡Gracias! Hemos recibido tu solicitud. Te responderemos desde hellorenovex@gmail.com.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section alt" id="servicios">
+    <div class="section-inner">
+      <h2>Servicios</h2>
+      <p class="section-desc">
+        Todos nuestros técnicos están verificados por Renovex.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Fontanería</h3>
+          <p>Fugas, grifos, desagües, termos, calentadores.</p>
+        </div>
+        <div class="service-card">
+          <h3>Electricidad</h3>
+          <p>Enchufes quemados, diferenciales, iluminación, boletines.</p>
+        </div>
+        <div class="service-card">
+          <h3>Climatización</h3>
+          <p>Instalación y reparación de aire acondicionado y aerotermia.</p>
+        </div>
+        <div class="service-card">
+          <h3>Electrodomésticos</h3>
+          <p>Lavadora, nevera, horno, lavavajillas: diagnóstico y reparación.</p>
+        </div>
+        <div class="service-card">
+          <h3>Pintura y carpintería</h3>
+          <p>Puertas, muebles, alisado de paredes, retoques estéticos.</p>
+        </div>
+        <div class="service-card">
+          <h3>Reformas</h3>
+          <p>Baños, cocinas, cambios de bañera a plato de ducha.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="section-inner">
+      <h2>Contacto</h2>
+      <p class="section-desc">
+        Escríbenos directamente. Respondemos lo antes posible.
+      </p>
+
+      <div class="card contact-card">
+        <p><strong>Email:</strong> <a href="mailto:hellorenovex@gmail.com">hellorenovex@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> Próximamente</p>
+        <p><strong>Horario:</strong> 24 h</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="logo footer-logo">
+        <span class="rx">Rx</span>
+        <span class="brand">Renovex</span>
+      </div>
+      <div class="footer-links">
+        <a href="#presupuesto">Presupuesto</a>
+        <a href="#servicios">Servicios</a>
+        <a href="profesionales.html">Profesionales</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="copy">© Renovex. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
